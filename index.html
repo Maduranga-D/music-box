@@ -5,6 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MusicBook is a free online music toolkit — tuner, metronome, tanpura, tabla, chord dictionary and BPM finder.">
 
     <title>MusicBook | Online Music Toolkit</title>
 
@@ -14,8 +15,9 @@
 </head>
 
 
-<body>
+<body data-root="">
 
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- Navigation Bar -->
 
@@ -27,6 +29,7 @@
 
     </div>
 
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
 
     <nav>
 
@@ -45,11 +48,13 @@
 
 
 
+<main id="main">
 
 <!-- Hero Section -->
 
 <section class="hero">
 
+    <div class="eq-bars"></div>
 
     <div class="hero-content">
 
@@ -72,12 +77,17 @@
         </p>
 
 
+        <div class="btn-row">
 
-        <button onclick="openTools()">
+            <button onclick="openTools()">
 
-            Explore Tools
+                Explore Tools
 
-        </button>
+            </button>
+
+            <a class="btn btn-outline" href="pages/about.html">About MusicBook</a>
+
+        </div>
 
 
     </div>
@@ -85,7 +95,6 @@
 
 
 </section>
-
 
 
 
@@ -99,58 +108,63 @@
     What You Can Do
 </h2>
 
+<p class="section-subtitle">
+    Six free tools that run entirely in your browser — no downloads, no
+    sign-up. Just open a tool and start playing.
+</p>
+
 
 
 <div class="feature-container">
 
 
-<div class="feature-card">
+<a class="feature-card" href="tools/tuner.html">
 
-🎼
+<div class="emoji">🎻</div>
 
 <h3>
-Notation
+Instrument Tuner
 </h3>
 
 <p>
-Create and learn music notation.
+Tune your instrument live using your microphone.
 </p>
 
-</div>
+</a>
 
 
 
 
-<div class="feature-card">
+<a class="feature-card" href="tools/tanpura.html">
 
-🎻
+<div class="emoji">🎵</div>
 
 <h3>
-Instrument Tools
+Virtual Tanpura
 </h3>
 
 <p>
-Tune and practice instruments.
+Practice with a Sa-Pa-Sa drone in any key.
 </p>
 
-</div>
+</a>
 
 
 
 
-<div class="feature-card">
+<a class="feature-card" href="tools/metronome.html">
 
-🎧
+<div class="emoji">🥁</div>
 
 <h3>
-Audio Tools
+Metronome
 </h3>
 
 <p>
-Analyze and edit music.
+Keep perfect time from 40 to 240 BPM.
 </p>
 
-</div>
+</a>
 
 
 </div>
@@ -179,14 +193,21 @@ m-PdeveloperPro
 
 
 <p>
-Contact:
-madurangadahanake@gmail.com
+Contact: <span class="contact-email">madurangadahanake@gmail.com</span>
 </p>
+
+
+<div class="btn-row">
+
+<a class="btn btn-outline" href="pages/contact.html">Send Feedback</a>
+
+</div>
 
 
 </section>
 
 
+</main>
 
 
 

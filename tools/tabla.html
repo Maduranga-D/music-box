@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MusicBook | Electronic Tabla</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animation.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">
+🎵 MusicBook
+</div>
+
+<button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+<a href="../pages/tools.html">Tools</a>
+
+<a href="../pages/about.html">About</a>
+
+<a href="../pages/contact.html">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+<main id="main">
+
+<section class="tool-hero">
+
+<h1>
+🪘 Electronic Tabla
+</h1>
+
+<p>
+Practice against classic taal (rhythm cycle) patterns. The gold
+pad marks Sam, the first beat of the cycle.
+</p>
+
+</section>
+
+
+<div class="tool-card" style="max-width:640px;">
+
+<label for="taalSelect">Taal</label>
+
+<select id="taalSelect">
+    <option value="teentaal" selected>Teentaal (16 beats)</option>
+    <option value="dadra">Dadra (6 beats)</option>
+    <option value="jhaptal">Jhaptal (10 beats)</option>
+    <option value="rupak">Rupak (7 beats)</option>
+</select>
+
+
+<label for="tablaBpm">Tempo</label>
+
+<h2 id="tablaBpmValue" style="font-size:28px;">100 BPM</h2>
+
+<input type="range" id="tablaBpm" min="40" max="200" value="100" aria-label="Tabla tempo">
+
+
+<div id="padGrid" class="pad-grid"></div>
+
+
+<div class="btn-row">
+
+    <button id="startTabla">Start</button>
+
+    <button id="stopTabla">Stop</button>
+
+</div>
+
+
+<p><span id="tablaStatus" class="status-pill off">Stopped</span></p>
+
+
+</div>
+
+
+<p style="text-align:center;"><a class="back-link" href="../pages/tools.html">&larr; Back to Tools</a></p>
+
+</main>
+
+
+
+<footer>
+
+<p>
+MusicBook v1.1.0
+</p>
+
+<p>
+Developed by m-PdeveloperPro
+</p>
+
+</footer>
+
+
+
+<script src="../js/main.js"></script>
+<script src="../js/tabla.js"></script>
+
+
+</body>
+
+</html>

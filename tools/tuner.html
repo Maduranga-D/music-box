@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MusicBook | Instrument Tuner</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animation.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">
+🎵 MusicBook
+</div>
+
+<button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+<a href="../pages/tools.html">Tools</a>
+
+<a href="../pages/about.html">About</a>
+
+<a href="../pages/contact.html">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+<main id="main">
+
+<section class="tool-hero">
+
+<h1>
+🎻 Instrument Tuner
+</h1>
+
+<p>
+Uses your microphone to detect the pitch you're playing in real
+time. Works for guitar, violin, vocals and most other instruments.
+Your browser will ask for microphone permission.
+</p>
+
+</section>
+
+
+<div class="tool-card">
+
+<div class="tuner-meter">
+
+    <div class="needle-wrap">
+
+        <div id="tunerNeedle" style="position:absolute; left:50%; bottom:0; width:4px; height:100px; background:var(--secondary); transform-origin:bottom center; transform:rotate(0deg); border-radius:4px;"></div>
+
+    </div>
+
+    <h2 id="tunerNote">--</h2>
+
+    <p id="tunerFreq">Press Start Tuner</p>
+
+</div>
+
+
+<div class="btn-row">
+
+    <button id="startTuner">Start Tuner</button>
+
+    <button id="stopTuner">Stop</button>
+
+</div>
+
+
+<p><span id="tunerStatus" class="status-pill off">Stopped</span></p>
+
+
+</div>
+
+
+<p style="text-align:center;"><a class="back-link" href="../pages/tools.html">&larr; Back to Tools</a></p>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+MusicBook v1.1.0
+</p>
+
+<p>
+Developed by m-PdeveloperPro
+</p>
+
+</footer>
+
+
+
+<script src="../js/main.js"></script>
+<script src="../js/tuner.js"></script>
+
+
+</body>
+
+</html>

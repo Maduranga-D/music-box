@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MusicBook | Virtual Tanpura</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animation.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">
+🎵 MusicBook
+</div>
+
+<button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+<a href="../pages/tools.html">Tools</a>
+
+<a href="../pages/about.html">About</a>
+
+<a href="../pages/contact.html">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+<main id="main">
+
+<section class="tool-hero">
+
+<h1>
+🎵 Virtual Tanpura
+</h1>
+
+<p>
+A continuous Sa-Pa-Sa drone to practice against, just like a real
+tanpura. Choose your key and mode below.
+</p>
+
+</section>
+
+
+<div class="tool-card">
+
+<label for="tanpuraKey">Key (Sa)</label>
+
+<select id="tanpuraKey">
+    <option value="C" selected>C</option>
+    <option value="C#">C#</option>
+    <option value="D">D</option>
+    <option value="D#">D#</option>
+    <option value="E">E</option>
+    <option value="F">F</option>
+    <option value="F#">F#</option>
+    <option value="G">G</option>
+    <option value="G#">G#</option>
+    <option value="A">A</option>
+    <option value="A#">A#</option>
+    <option value="B">B</option>
+</select>
+
+
+<label for="tanpuraMode">Mode</label>
+
+<select id="tanpuraMode">
+    <option value="sa-pa" selected>Sa-Pa-Sa-Sa</option>
+    <option value="sa-ma">Sa-Ma-Sa-Sa</option>
+</select>
+
+
+<div class="btn-row" style="margin-top:24px;">
+
+    <div class="tanpura-string" style="width:14px;height:70px;background:var(--panel-2);border-radius:6px;"></div>
+    <div class="tanpura-string" style="width:14px;height:70px;background:var(--panel-2);border-radius:6px;"></div>
+    <div class="tanpura-string" style="width:14px;height:70px;background:var(--panel-2);border-radius:6px;"></div>
+    <div class="tanpura-string" style="width:14px;height:70px;background:var(--panel-2);border-radius:6px;"></div>
+
+</div>
+
+
+<div class="btn-row">
+
+    <button id="startTanpura">Start Drone</button>
+
+    <button id="stopTanpura">Stop</button>
+
+</div>
+
+
+<p><span id="tanpuraStatus" class="status-pill off">Stopped</span></p>
+
+
+</div>
+
+
+<p style="text-align:center;"><a class="back-link" href="../pages/tools.html">&larr; Back to Tools</a></p>
+
+</main>
+
+
+
+<footer>
+
+<p>
+MusicBook v1.1.0
+</p>
+
+<p>
+Developed by m-PdeveloperPro
+</p>
+
+</footer>
+
+
+
+<script src="../js/main.js"></script>
+<script src="../js/tanpura.js"></script>
+
+
+</body>
+
+</html>

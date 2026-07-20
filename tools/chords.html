@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MusicBook | Chord Dictionary</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animation.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">
+🎵 MusicBook
+</div>
+
+<button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+<a href="../pages/tools.html">Tools</a>
+
+<a href="../pages/about.html">About</a>
+
+<a href="../pages/contact.html">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+<main id="main">
+
+<section class="tool-hero">
+
+<h1>
+🎸 Chord Dictionary
+</h1>
+
+<p>
+Search for a guitar chord to see its fretboard diagram. Circles
+mark where to press, "x" means don't play that string, and a ring
+means play it open.
+</p>
+
+</section>
+
+
+<div class="tool-card" style="max-width:700px;">
+
+<label for="chordSearch">Search chords</label>
+
+<input type="text" id="chordSearch" placeholder="Try 'A minor' or 'G7'">
+
+<label for="chordCategory">Category</label>
+
+<select id="chordCategory">
+    <option value="All" selected>All</option>
+    <option value="Major">Major</option>
+    <option value="Minor">Minor</option>
+    <option value="Seventh">Seventh</option>
+    <option value="Suspended">Suspended</option>
+</select>
+
+</div>
+
+
+<div id="chordGrid" class="chord-grid"></div>
+
+<p id="chordEmpty" style="display:none; text-align:center; color:var(--muted);">
+No chords match your search.
+</p>
+
+
+<p style="text-align:center;"><a class="back-link" href="../pages/tools.html">&larr; Back to Tools</a></p>
+
+</main>
+
+
+
+<footer>
+
+<p>
+MusicBook v1.1.0
+</p>
+
+<p>
+Developed by m-PdeveloperPro
+</p>
+
+</footer>
+
+
+
+<script src="../js/main.js"></script>
+<script src="../js/chords.js"></script>
+
+
+</body>
+
+</html>

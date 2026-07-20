@@ -10,6 +10,7 @@
 <title>MusicBook | Metronome</title>
 
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animation.css">
 
 </head>
 
@@ -24,6 +25,7 @@
 🎵 MusicBook
 </div>
 
+<button class="nav-toggle" aria-label="Toggle navigation">☰</button>
 
 <nav>
 
@@ -41,19 +43,23 @@
 </header>
 
 
+<main id="main">
 
-
-
-<section class="features">
-
+<section class="tool-hero">
 
 <h1>
 🥁 Online Metronome
 </h1>
 
+<p>
+A precise click track that runs from 40 to 240 BPM, with an
+accented first beat for whatever time signature you're practicing.
+</p>
+
+</section>
 
 
-<div class="feature-card">
+<div class="tool-card">
 
 
 <h2 id="bpmValue">
@@ -62,19 +68,27 @@
 
 
 
-<input 
+<input
 type="range"
 id="bpm"
 min="40"
 max="240"
 value="120"
+aria-label="Beats per minute"
 >
 
 
+<label for="beatsPerBar">Beats per bar</label>
 
-<br><br>
+<select id="beatsPerBar">
+    <option value="2">2 (Duple)</option>
+    <option value="3">3 (Waltz)</option>
+    <option value="4" selected>4 (Common)</option>
+    <option value="6">6 (Compound)</option>
+</select>
 
 
+<div class="btn-row">
 
 <button onclick="startMetronome()">
 Start
@@ -86,14 +100,18 @@ Start
 Stop
 </button>
 
+</div>
+
+
+<p><span id="metroStatus" class="status-pill off">Stopped</span></p>
 
 
 </div>
 
 
+<p style="text-align:center;"><a class="back-link" href="../pages/tools.html">&larr; Back to Tools</a></p>
 
-</section>
-
+</main>
 
 
 
@@ -101,7 +119,7 @@ Stop
 <footer>
 
 <p>
-MusicBook v1.0.0
+MusicBook v1.1.0
 </p>
 
 <p>
@@ -113,7 +131,8 @@ Developed by m-PdeveloperPro
 
 
 
-<script src="../js/tools.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/metronome.js"></script>
 
 
 </body>

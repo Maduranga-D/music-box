@@ -1,0 +1,8 @@
+[
+  { "name": "Yaman",   "time": "Evening",       "notes": "Sa Re Ga Ma# Pa Dha Ni" },
+  { "name": "Bhairav",  "time": "Early Morning", "notes": "Sa Re(k) Ga Ma Pa Dha(k) Ni" },
+  { "name": "Bhupali",  "time": "Evening",       "notes": "Sa Re Ga Pa Dha" },
+  { "name": "Khamaj",   "time": "Night",         "notes": "Sa Re Ga Ma Pa Dha Ni(k)" },
+  { "name": "Darbari",  "time": "Late Night",    "notes": "Sa Re Ga(k) Ma Pa Dha(k) Ni(k)" },
+  { "name": "Malkauns", "time": "Late Night",    "notes": "Sa Ga(k) Ma Dha(k) Ni(k)" }
+]

@@ -1,178 +1,115 @@
-==================================================
-              MusicBook v1.1.0
-     Online Music Toolkit Platform
-==================================================
+# MusicBook v1.1.0 🎵
+> **Online Music Toolkit Platform for Musicians, Students & Music Lovers.**
 
+![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Platform](https://img.shields.io/badge/platform-Web%20Audio%20API-orange.svg)
+![Status](https://img.shields.io/badge/status-Completed-brightgreen.svg)
 
-Developer:
-m-PdeveloperPro
+---
 
-Contact:
-madurangadahanake@gmail.com
+## 📌 Project Overview
 
+**MusicBook** කියන්නේ සංගීතඥයින්, ශිෂ්‍යයින් සහ සංගීතයට ලැදි ඕනෑම කෙනෙකුට අවශ්‍ය වෙනත් සියලුම ඩිජිටල් මෙවලම් එකම තැනකින් ලබාදෙන Complete Online Music Toolkit එකක්.
 
-Project Purpose:
-A complete online music toolkit for musicians,
-students and music lovers.
+* **Main Goal:** Learn | Practice | Create | Perform
+* **Developer:** m-PdeveloperPro
+* **Contact:** [madurangadahanake@gmail.com](mailto:madurangadahanake@gmail.com)
 
-Main Goal:
-Learn | Practice | Create | Perform
+---
 
+## ✨ Features & Tools
 
-==================================================
-STATUS: ALL PAGES AND TOOLS COMPLETE
-==================================================
+සියලුම මෙවලම් (Tools) Web Audio API භාවිතයෙන් සජීවීව ක්‍රියාත්මක වන අතර Audio Files කිසිවක් භාවිතා නොවේ:
 
-Every page now works, every tool card links to a
-finished tool, the theme has been refined and made
-consistent across all pages, animations run on every
-page (with prefers-reduced-motion respected), the
-Contact page has a working feedback form, and the
-layout is responsive on mobile.
+* 🎻 **Instrument Tuner:** Live pitch detection via microphone with autocorrelation, note display, frequency, and tuning-accuracy needle.
+* 🎵 **Virtual Tanpura:** Sa-Pa-Sa-Sa or Sa-Ma-Sa-Sa drone options across all 12 selectable keys.
+* 🥁 **Metronome:** 40–240 BPM range with selectable beats per bar and accented first beat (Sam).
+* 🪘 **Electronic Tabla:** Includes Teentaal, Dadra, Jhaptal, and Rupak with a visual beat grid.
+* 🎸 **Chord Dictionary:** Searchable & filterable chord list with interactive SVG fretboard diagrams.
+* ⏱️ **BPM Finder:** Tap-tempo functionality (via mouse or spacebar) with rolling average calculation.
+* 📖 **Tuning Reference:** Standard tunings reference for Guitar, Ukulele, Violin, Viola, Cello, Bass, and Mandolin.
 
+---
 
-==================================================
-TECHNOLOGY
-==================================================
+## 🛠️ Technology Stack
 
-Frontend:
-- HTML5
-- CSS3
-- Vanilla JavaScript (Web Audio API, MediaDevices API)
+* **Frontend:** HTML5, CSS3, Vanilla JavaScript (Web Audio API, MediaDevices API)
+* **Hosting:** GitHub Pages (or any static web host)
+* **No Build Step:** Frameworks, backends, හෝ external audio files අවශ්‍ය නොවේ. 
 
-Hosting:
-- GitHub Pages (or any static host)
+---
 
-No build step, no backend, and no external services
-required. All audio (metronome clicks, tanpura drone,
-tabla hits) is synthesized in the browser with the Web
-Audio API, so there are no sound files to manage.
+## 📂 Project Structure
 
-
-==================================================
-PROJECT STRUCTURE
-==================================================
-
-
+```text
 MusicBook/
+├── index.html
+├── css/
+│   ├── style.css
+│   └── animation.css
+├── js/
+│   ├── main.js (nav, active links, hero equalizer)
+│   ├── metronome.js
+│   ├── tuner.js
+│   ├── tanpura.js
+│   ├── tabla.js
+│   ├── chords.js
+│   └── bpm.js
+├── pages/
+│   ├── tools.html
+│   ├── about.html
+│   └── contact.html
+├── tools/
+│   ├── metronome.html
+│   ├── tuner.html
+│   ├── tanpura.html
+│   ├── tabla.html
+│   ├── chords.html
+│   ├── bpm.html
+│   └── instruments.html
+├── data/
+│   ├── chords.json
+│   └── ragas.json
+└── assets/
+    ├── images/
+    └── icons/
+```
 
-|
-|-- index.html
-|
-|-- css/
-|    |-- style.css
-|    |-- animation.css
-|
-|-- js/
-|    |-- main.js          (nav, active links, hero equalizer)
-|    |-- metronome.js
-|    |-- tuner.js
-|    |-- tanpura.js
-|    |-- tabla.js
-|    |-- chords.js
-|    |-- bpm.js
-|
-|-- pages/
-|    |-- tools.html
-|    |-- about.html
-|    |-- contact.html      (working feedback form)
-|
-|-- tools/
-|    |-- metronome.html
-|    |-- tuner.html
-|    |-- tanpura.html
-|    |-- tabla.html
-|    |-- chords.html
-|    |-- bpm.html
-|    |-- instruments.html  (tuning reference)
-|
-|-- data/
-|    |-- chords.json
-|    |-- ragas.json
-|
-|-- assets/
-     |-- images/
-     |-- icons/
+---
 
+## 🎨 Design System
 
-==================================================
-TOOLS (ALL WORKING)
-==================================================
+**Theme:** Dark Music Studio  
 
+| Element | Color Code |
+| :--- | :--- |
+| **Background** | `#0B1020` |
+| **Panel** | `#111827` |
+| **Primary** | `#7C3AED` |
+| **Secondary** | `#06B6D4` |
+| **Accent Gold** | `#F59E0B` |
 
-🎻 Instrument Tuner
-- Live pitch detection via microphone + autocorrelation
-- Note name, frequency, and a tuning-accuracy needle
+* **Typography:** `Poppins` (Headings) + `Inter` (Body text)
+* **Accessibility:** Fully responsive layout with `prefers-reduced-motion` support.
 
+---
 
-🎵 Virtual Tanpura
-- Sa-Pa-Sa-Sa or Sa-Ma-Sa-Sa drone
-- 12 selectable keys
+## 🚀 Future Roadmap
 
+### **MusicBook v2.0**
+- [ ] Migrate to React.js
+- [ ] Firebase Authentication
+- [ ] User profiles & saved projects
 
-🥁 Metronome
-- 40-240 BPM
-- Selectable beats per bar with an accented first beat
+### **MusicBook v3.0**
+- [ ] AI Vocal Separation
+- [ ] Automated Raga Detection
+- [ ] Automatic Music Notation Generator
 
+---
 
-🪘 Electronic Tabla
-- Teentaal, Dadra, Jhaptal, Rupak
-- Visual beat grid with Sam highlighted
+## 📩 Contact & Feedback
 
-
-🎸 Chord Dictionary
-- Searchable, filterable by category
-- SVG fretboard diagram per chord
-
-
-⏱ BPM Finder
-- Tap-tempo (mouse or spacebar) with rolling average
-
-
-📖 Tuning Reference
-- Standard tunings for guitar, ukulele, violin, viola,
-  cello, bass and mandolin
-
-
-==================================================
-DESIGN SYSTEM
-==================================================
-
-
-Theme:
-Dark Music Studio
-
-
-Colors:
-
-Background:      #0B1020
-Panel:           #111827
-Primary:         #7C3AED
-Secondary:       #06B6D4
-Gold:            #F59E0B
-
-
-Type:
-Poppins (headings) + Inter (body)
-
-
-==================================================
-FUTURE DEVELOPMENT
-==================================================
-
-
-MusicBook v2.0
-- React version
-- Firebase login
-- User profiles / saved projects
-
-
-MusicBook v3.0
-- AI vocal separation
-- Raga detection
-- Automatic music notation
-
-
-==================================================
-END OF README
-==================================================
+වැඩිදුර තොරතුරු සහ අදහස් දැක්වීම් සඳහා විද්‍යුත් තැපෑලෙන් සම්බන්ධ වන්න:
+📧 **Email:** [madurangadahanake@gmail.com](mailto:madurangadahanake@gmail.com)

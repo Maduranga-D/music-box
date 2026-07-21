@@ -97,6 +97,54 @@ function buildEqualizer(){
 }
 
 
+// Starry black background with twinkling music icons
+
+function buildStarfield(){
+
+    if(document.querySelector(".starfield")) return;
+
+    let field = document.createElement("div");
+    field.className = "starfield";
+    field.setAttribute("aria-hidden", "true");
+    document.body.prepend(field);
+
+    let small = window.innerWidth < 600;
+
+    let starCount = small ? 45 : 90;
+
+    for(let i=0; i<starCount; i++){
+
+        let s = document.createElement("span");
+        s.className = "star" + (Math.random() > 0.82 ? " big" : "");
+        s.style.left = (Math.random()*100).toFixed(2)+"%";
+        s.style.top = (Math.random()*100).toFixed(2)+"%";
+        s.style.animationDelay = (Math.random()*4).toFixed(2)+"s";
+        s.style.animationDuration = (2.5 + Math.random()*3).toFixed(2)+"s";
+        field.appendChild(s);
+
+    }
+
+    let icons = ["🎵","🎶","🎼","🎹","🎸","🥁","🎻","♪","♫","🎧"];
+
+    let iconCount = small ? 7 : 14;
+
+    for(let i=0; i<iconCount; i++){
+
+        let el = document.createElement("span");
+        el.className = "star-icon";
+        el.textContent = icons[Math.floor(Math.random()*icons.length)];
+        el.style.left = (Math.random()*96).toFixed(2)+"%";
+        el.style.top = (Math.random()*96).toFixed(2)+"%";
+        el.style.fontSize = (14 + Math.random()*12).toFixed(0)+"px";
+        el.style.animationDelay = (Math.random()*4.5).toFixed(2)+"s";
+        el.style.animationDuration = (3 + Math.random()*3.5).toFixed(2)+"s";
+        field.appendChild(el);
+
+    }
+
+}
+
+
 // Simple Page Loading Effect
 
 window.onload = function(){
@@ -106,5 +154,6 @@ window.onload = function(){
     initNav();
     highlightActiveLink();
     buildEqualizer();
+    buildStarfield();
 
 }

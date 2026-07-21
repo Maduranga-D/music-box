@@ -60,17 +60,17 @@ function buildDiagramSVG(frets){
 
         if(fret === -1){
 
-            svg += '<text x="'+x+'" y="'+(topPad-6)+'" font-size="10" fill="#F59E0B" text-anchor="middle">x</text>';
+            svg += '<text x="'+x+'" y="'+(topPad-6)+'" font-size="10" fill="#E63946" text-anchor="middle">x</text>';
 
         } else if(fret === 0){
 
-            svg += '<circle cx="'+x+'" cy="'+(topPad-9)+'" r="4" fill="none" stroke="#06B6D4" stroke-width="1.5"/>';
+            svg += '<circle cx="'+x+'" cy="'+(topPad-9)+'" r="4" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>';
 
         } else{
 
             let y = topPad + (fret-0.5)*fretGap;
 
-            svg += '<circle cx="'+x+'" cy="'+y+'" r="6" fill="#7C3AED"/>';
+            svg += '<circle cx="'+x+'" cy="'+y+'" r="6" fill="#E63946"/>';
 
         }
 
